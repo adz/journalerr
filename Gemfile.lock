@@ -1,8 +1,19 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    byebug (8.2.1)
+    coderay (1.1.0)
     diff-lcs (1.2.5)
     dry-equalizer (0.2.0)
+    inflecto (0.0.2)
+    method_source (0.8.2)
+    pry (0.10.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    pry-byebug (3.3.0)
+      byebug (~> 8.0)
+      pry (~> 0.10)
     rom (1.0.0)
       dry-equalizer (~> 0.2)
       rom-mapper (~> 0.3.0)
@@ -33,6 +44,7 @@ GEM
       rspec-support (~> 3.4.0)
     rspec-support (3.4.1)
     sequel (4.30.0)
+    slop (3.6.0)
     thread_safe (0.3.5)
     transproc (0.4.0)
     wisper (1.6.1)
@@ -41,6 +53,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  inflecto
+  pry-byebug
   rom
   rom-sql
   rspec
